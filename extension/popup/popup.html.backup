@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Contact Sync</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>LinkedIn Contact Sync</h1>
+      <p class="subtitle">Synchronisez vos contacts LinkedIn</p>
+    </div>
+
+    <div id="status" class="status"></div>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-number" id="totalContacts">0</div>
+        <div class="stat-label">Contacts sauvegardés</div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="extractBtn" class="btn btn-primary">
+        <span id="btnText">📥 Extraire les contacts</span>
+        <span id="btnLoader" class="loader hidden"></span>
+      </button>
+
+      <button id="viewBtn" class="btn btn-secondary">
+        📊 Voir mes contacts
+      </button>
+
+      <button id="clearBtn" class="btn btn-danger">
+        🗑️ Effacer tout
+      </button>
+    </div>
+
+    <div class="info">
+      <p><strong>Instructions :</strong></p>
+      <ol>
+        <li>Allez sur <a href="https://www.linkedin.com/mynetwork/invite-connect/connections/" target="_blank">Mes relations LinkedIn</a></li>
+        <li>Faites défiler pour charger plus de contacts</li>
+        <li>Cliquez sur "Extraire les contacts"</li>
+        <li>Consultez vos contacts dans l'app web</li>
+      </ol>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Contact Sync - Login</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>LinkedIn Contact Sync</h1>
+      <p class="subtitle">Sign in to sync your contacts</p>
+    </div>
+
+    <div id="loginForm" class="auth-form">
+      <input type="email" id="email" placeholder="Email" class="input" />
+      <input type="password" id="password" placeholder="Password" class="input" />
+      <button id="loginBtn" class="btn btn-primary">Sign In</button>
+      <div id="error" class="error hidden"></div>
+
+      <div style="margin: 16px 0; text-align: center; color: #666; font-size: 12px;">
+        <span>or</span>
+      </div>
+
+      <button id="linkedinBtn" class="btn" style="background-color: #0077b5; color: white;">
+        <span style="font-weight: 600;">Sign in with LinkedIn</span>
+      </button>
+
+      <p class="text-center" style="margin-top: 10px; font-size: 12px;">
+        <a href="http://localhost:5173/register" target="_blank" class="link">Create account</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="popup-auth.js"></script>
+</body>
+</html>

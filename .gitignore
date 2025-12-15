@@ -1,0 +1,54 @@
+# Claude Code
+.claude/
+claude/
+.claude_*
+
+# Node modules
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+*.local
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+**/.env
+**/.env.local
+
+# Database
+*.db
+*.db-journal
+prisma/dev.db
+backend/dev.db
+backend/prisma/dev.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Extension builds
+extension/dashboard/
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+coverage/
+.nyc_output/
